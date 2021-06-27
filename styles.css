@@ -1,0 +1,118 @@
+body{
+    background-image: url(photo.jpg);
+    background-size: cover ;
+    background-position: center;
+    height: 756px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+.form{
+    margin: 10px  auto;
+    height: 55px;
+    width: 260px;
+    padding: 10px;
+}
+.heading{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:25px
+}
+#searchbox{
+    border: 0;
+    background-color: #BFE4EC;
+    height: 35px;
+    width: 200px;
+    color:black;
+    border-radius: 0 0 0 8px;
+}
+button{
+    border: 0;
+    height: 37px;
+    width: 50px;
+    padding: 0;
+    background-color: #ee551d;
+    position: relative;
+    right: 5px;
+    top:9px;
+    color:white;
+    border-radius: 0 8px 0 0;
+    transition: 0.15s;
+}
+nav{
+    background-color: #70AAB6;
+    height: 80px;
+}
+::placeholder{
+    color:black;
+    padding-left: 75px;
+    font-weight:bolder;
+}
+img{
+    position: relative;
+    top:2px;
+}
+button:hover{
+    background-color: #ff4500;
+}
+.temp{
+    text-align: center;
+    height: 60px;
+    padding-top:40px ;
+    border-right: 3px solid #A6D5DF;
+    background-color: white;
+    background: rgb(54,101,119,0.6);
+}
+.info{
+    position:relative;
+    top:10px;
+    left: -220px;
+    height: 100px;
+    display:grid ;
+    grid-template-columns: 230px 160px 160px 160px;
+}
+.temp:nth-of-type(4){
+    border-right:0;
+}
+.temp1{
+    font-size: 50px;
+    height: 80px;
+    padding-top:20px;
+}
+h4{
+    position: relative;
+    top:-40px;
+}
+.temp2 , .temp3{
+    position: relative;
+    top:-45px;
+}
+.hide{
+    display: none;
+}
+input:focus {
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+.cityname{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width:730px) {
+    .info{
+        grid-template-columns: 230px ;
+        left: 20px;
+    }
+    .temp{
+        border: 0;
+        border-bottom: 3px solid #A6D5DF;
+    }
+    .temp:nth-of-type(4){
+        border: 0;
+    }
+}
